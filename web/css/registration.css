@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* =======================================================
+* registration
+* ======================================================= */
+#registration h3 {
+	font-size: 2.4rem;
+}
+
+#registration h4 {
+	font-size: 2rem;
+	text-align: center;
+	padding: 4% 0 0;
+}
+
+#registration h3 + p:first-of-type,
+#registration h3 + span + p:first-of-type {
+	padding-top: 1%
+}
+
+.red {
+	color: #FE0000;
+}
+
+form {
+	padding: 4% 12% 0;
+}
+
+dl {
+	display: flex;
+	align-items: center;
+	padding-bottom: 1%;
+}
+
+.select-inner {
+	justify-content: flex-start;
+}
+
+dt {
+	width: 30%;
+}
+
+dd {
+	width: 70%;
+}
+
+input {
+	width: 100%;
+	border: 1px solid #141414;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+.birth,
+.gender {
+	display: flex;
+	width: 12%;
+	align-items: center;
+	position: relative;
+	margin-right: 1%;
+}
+
+.gender::after,
+.birth::after {
+	content: '';
+	width: 6px;
+	height: 6px;
+	border: 0px;
+	border-bottom: solid 2px #282728;
+	border-right: solid 2px #282728;
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+	margin-top: -4%;
+}
+
+.birth::after {
+	right: 25%;
+}
+
+.gender::after {
+	right: 23px;
+}
+
+.birth select {
+	width: 100%;
+}
+
+.birth span {
+	padding-right: 1%;
+}
+
+.gender select {
+	width: 83%;
+}
+
+form p {
+	text-align: center;
+	padding: 2%;
+}
+
+a.link {
+	display: inline-block;
+	padding: 1%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+button.btn-blk {
+	display: block;
+	margin: 0 auto;
+}
+
+form .flex-center {
+	padding-top: 4%;
+}
+
+.complete-text {
+	font-size: 3rem;
+	text-align: center;
+}
+
+/* =======================================================
+* max-width: 770px
+* ======================================================= */
+@media screen and (max-width: 770px) {
+	#registration h4 {
+		font-size: 1.8rem;
+		padding: 8% 4% 0;
+	}
+
+	form {
+		padding: 8% 6% 0;
+	}
+
+	dl {
+		display: block;
+		padding-bottom: 4%;
+	}
+
+	dt, dd {
+		width: 100%;
+	}
+
+	.birth {
+		display: inline-flex;
+		width: 25%;
+	}
+
+}
+
+/* =======================================================
+* max-width: 420px
+* ======================================================= */
+@media screen and (max-width: 420px) {
+	.birth::after {
+		right: 30%;
+	}
+
+	.gender {
+		width: 20%;
+	}
+
+	.gender::after {
+		right: 15%;
+	}
+
+	.gender select {
+		width: 100%;
+	}
+
+}

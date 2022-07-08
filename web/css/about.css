@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* =======================================================
+* about
+* ======================================================= */
+#about .container {
+	padding-bottom: 0;
+}
+
+#eyecatch {
+	background: url("../img/kv_about.jpg") center center no-repeat;
+	background-size: cover;
+}
+
+#eyecatch h3 {
+	color: #C1A209;
+	font-size: 3.6rem;
+	text-shadow :
+		2px 2px 5px #FFF,
+		-2px 2px 5px #FFF,
+		2px -2px 5px #FFF,
+		-2px -2px 5px #FFF,
+		2px 0px 5px #FFF,
+		0px 2px 5px #FFF,
+		-2px 0px 5px #FFF,
+		0px -2px 5px #FFF;
+		padding: 16% 0;
+}
+
+.plan {
+	padding: 4% 0;
+}
+
+.plan .flex-block {
+	align-items: inherit;
+	margin-bottom: 0.1%;
+}
+
+.type {
+	flex: 1;
+	color: #FFF;
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+	padding: 3% 4%;
+}
+
+.plan .flex-block:first-of-type .type {
+	background: #B27637;
+}
+
+.plan .flex-block:last-of-type .type {
+	background: #C1A209;
+}
+
+.plan p.flex-block {
+	flex: 5;
+	align-items: center;
+	margin-left: 1%;
+}
+
+@media screen and (min-width: 771px) {
+	.plan .flex-block:first-of-type p.flex-block {
+		border-top: 1px solid #C4C4C4;
+	}
+
+	.plan .flex-block.line {
+		border-width: 0;
+		height: 1px;
+		background: linear-gradient(to left,#C4C4C4 75.8%, #FFF 24.2%);
+		background: -webkit-linear-gradient(to left,#C4C4C4 75.8%, #FFF 24.2%);
+	}
+
+	.plan .flex-block:last-of-type p.flex-block {
+		border-bottom: 1px solid #C4C4C4;
+	}
+}
+
+
+
+
+
+.plan .flex-block p span {
+	font-size: 1.8rem;
+	font-weight: bold;
+	padding-left: 10%;
+}
+
+.plan .flex-block:first-of-type p span:first-of-type {
+	flex: 1;
+	color: #B27637;
+	font-size: 3rem;
+}
+
+.plan .flex-block:first-of-type p span:first-of-type::after {
+	content: " 円/年間";
+	color: #B27637;
+	font-size: 1.8rem;
+}
+
+.plan .flex-block:last-of-type p span:first-of-type {
+	flex: 1;
+	color: #C1A209;
+	font-size: 3rem;
+}
+
+.plan .flex-block:last-of-type p span:first-of-type::after {
+	content: " 円/年間";
+	color: #C1A209;
+	font-size: 1.8rem;
+}
+
+.plan .flex-block p span:last-of-type {
+	flex: 2;
+	line-height: 1;
+	padding: 0;
+}
+
+small {
+	font-size: 1rem;
+}
+
+.benefit li {
+	padding-bottom: 4%;
+}
+
+.gradation {
+  padding: 1% 4%;
+  background: linear-gradient(to right, #FFF 0%, #C1A209 30%, #C1A209 70%, #FFF 100%);
+  color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 1%;
+}
+
+.benefit-text {
+	font-size: 2.4rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.benefit-text span {
+	font-size: 1.8rem;
+}
+
+.schedule {
+	font-size: 1.4rem;
+}
+
+.service-inner {
+	position: relative;
+}
+
+.service-inner img {
+	width: 100%;
+}
+
+.service h4 {
+	position: absolute;
+	color: #C1A209;
+	font-size: 2.4rem;
+	font-weight: bold;
+	text-shadow :
+		2px 2px 5px #FFF,
+		-2px 2px 5px #FFF,
+		2px -2px 5px #FFF,
+		-2px -2px 5px #FFF,
+		2px 0px 5px #FFF,
+		0px 2px 5px #FFF,
+		-2px 0px 5px #FFF,
+		0px -2px 5px #FFF;
+	top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  padding: 0;
+	margin: 0;
+}
+
+.service-inner:first-of-type h4 {
+	top: 50%;
+  left: 48%;
+  -ms-transform: translate(-48%,-50%);
+  -webkit-transform: translate(-48%,-50%);
+  transform: translate(-48%,-50%);
+}
+
+
+/* =======================================================
+* max-width: 770px
+* ======================================================= */
+@media screen and (max-width: 770px) {
+	#eyecatch h3 {
+		font-size: 2rem;
+	}
+
+	.plan {
+		padding: 8% 0;
+	}
+
+	.plan .flex-block {
+		display: block;
+	}
+
+	.plan .flex-block p span {
+		padding: 0;
+	}
+
+	.plan p.flex-block {
+		text-align: center;
+		padding-bottom: 2%;
+		margin: 0;
+	}
+
+
+	.benefit li {
+		padding-bottom:	8%;
+	}
+
+	.benefit-text {
+		font-size: 2rem;
+	}
+
+	.benefit-text span {
+		font-size: 1.4rem;
+	}
+
+	.schedule {
+		font-size: 1rem;
+	}
+
+	.service .flex-space-between {
+		display: block;
+	}
+
+	.service-inner  {
+		padding-bottom: 4%;
+	}
+
+}
